@@ -1,7 +1,9 @@
 document.body.style.backgroundColor = '#e6e6fa';
-document.body.style.color = '#fffff';
+document.body.style.color = '#00000';
 
 const loginForm = document.querySelector('.login-form');
+loginForm.addEventListener('submit', handleFormSubmit);
+
 function handleFormSubmit(e) {
   e.preventDefault();
   const { email, password } = e.currentTarget.elements;
